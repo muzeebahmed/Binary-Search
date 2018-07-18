@@ -25,13 +25,11 @@ public class BinarySearch
 		{
 		int mid=(start+end)/2;
 		if(a[mid]==x) 
-		{
 			return mid;
-		}
 		else if(x<a[mid])
 			return isBinarySearch(a, x, start, mid-1);
 		else
-		return isBinarySearch(a, x,  mid+1, end) ;
+			return isBinarySearch(a, x,  mid+1, end) ;
 		}
 		return -1;
 		
